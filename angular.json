@@ -25,7 +25,12 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
+                "output": "/assets/"
+              }
             ],
             "styles": [
               "src/styles.less"
@@ -123,6 +128,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "idser4-admin-ui"
+    }
+  },
+  "defaultProject": "idser4-admin-ui",
+  "cli": {
+    "analytics": "386eac56-6ffc-4624-b1da-33a775511d91"
+  }
 }
